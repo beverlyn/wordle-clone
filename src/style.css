@@ -1,3 +1,5 @@
+@import "tailwindcss";
+  
   /* Custom CSS for tile flip animation and shake */
   .tile-inner {
     position: relative;

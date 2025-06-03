@@ -48,7 +48,12 @@ function initializeGame() {
 
     for (let i = 0; i < MAX_ATTEMPTS; i++) {
         const row = document.createElement('div');
-        row.classList.add('grid', `grid-cols-${WORD_LENGTH}`, 'gap-1.5', 'sm:gap-2');
+        row.classList.add(
+          'grid',
+          `grid-cols-${WORD_LENGTH}`, // grid-cols-5 (annotation for Tailwind)
+          'gap-1.5',
+          'sm:gap-2',
+        );
         for (let j = 0; j < WORD_LENGTH; j++) {
             const tileContainer = document.createElement('div');
             tileContainer.classList.add(
